@@ -1,0 +1,24 @@
+.cardListItems {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+.cardListItems li {
+  list-style-type: none;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 10px;
+}
+.cardListItem {
+  background: #1976d2;
+  padding: 10px 10px 20px;
+  color: #ffffff;
+}
+
+.cardListItem a {
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 3px 5px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
