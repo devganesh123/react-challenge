@@ -22,8 +22,12 @@ const DrinkOrder = () => {
         direction={{ xs: "column", sm: "row" }}
         spacing={{ xs: 1, sm: 2, md: 2 }}
       >
-        {drinkObject.map((item) => (
-          <CommonOrders item={item} onAddOrder={addHandler}></CommonOrders>
+        {drinkObject.map((item, index) => (
+          <CommonOrders
+            item={item}
+            onAddOrder={addHandler}
+            key={index}
+          ></CommonOrders>
         ))}
       </Stack>
       <Card sx={{ maxWidth: 345, margin: "3rem auto" }}>
